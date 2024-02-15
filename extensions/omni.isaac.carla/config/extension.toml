@@ -1,0 +1,23 @@
+[package]
+version = "0.0.1"
+title = "CARLA extension"
+description="Extension to include 3D Datasets from the Carla Simulator."
+authors =["Pascal Roth"]
+repository = "https://gitlab-master.nvidia.com/mmittal/omni_isaac_orbit"
+category = "robotics"
+keywords = ["kit", "robotics"]
+readme  = "docs/README.md"
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.isaac.ui" = {}
+"omni.isaac.core" = {}
+"omni.isaac.orbit" = {}
+"omni.isaac.anymal" = {}
+
+# Main python module this extension provides.
+[[python.module]]
+name = "omni.isaac.carla"
+
+[[python.module]]
+name = "omni.isaac.carla.scripts"
